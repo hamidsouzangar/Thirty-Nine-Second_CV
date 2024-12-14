@@ -6,6 +6,9 @@ https://github.com/PandaScience/FortySecondsCV
 **Installation:**
 
 1.  Download the `thirtynine_secondcv.cls` file.
+
+https://www.overleaf.com/latex/templates/thirtyninesecondscv/cxkwbrbxbfhn
+
 2.  Place the file in your LaTeX project directory.
 3.  In your main LaTeX document (`.tex` file), use the `\documentclass{thirtyninesecondcv}` command to utilize this class.
 

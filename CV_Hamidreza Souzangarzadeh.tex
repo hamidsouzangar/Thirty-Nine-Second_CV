@@ -1,0 +1,737 @@
+
+%
+% Contributors
+% ------------
+% * ifokkema
+% * Bertbk
+% * Hespe
+%
+% Attributions
+% ------------
+% * ThirtyNinesecondscv is based on the fortysecondscv class 
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+	a4paper,
+	% showframes,
+	% vline=2.2em,
+	% maincolor=cvgreen,
+	% sidecolor=gray!50,
+	% sectioncolor=red,
+	% subsectioncolor=orange,
+	% itemtextcolor=black!80,
+	% sidebarwidth=0.4\paperwidth,
+	% topbottommargin=0.03\paperheight,
+	% leftrightmargin=20pt,
+	% profilepicsize=4.5cm,
+	% profilepicborderwidth=3.5pt,
+	% profilepicstyle=profilecircle,
+	% profilepiczoom=1.0,
+	% profilepicxshift=0mm,
+	% profilepicyshift=0mm,
+	% profilepicrounding=1.0cm,
+]{ThirtyNinesecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{tabto}
+% uncomment in case you don't want any hyphenation
+% \usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+%	\newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+%	\usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+	% default font size is \large, so adjust to harmonize with sidebar layout
+	bubble center node font = \footnotesize,
+	bubble node font = \footnotesize,
+	% default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+	bubble center node size = 0.4\sidebartextwidth,
+	bubble node size = 0.25\sidebartextwidth,
+	distance center/other bubbles = 1.5em,
+	% set center bubble color
+	bubble center node color = maincolor!70,
+	% define the list of colors usable in the diagram
+	set color list = {maincolor!10, maincolor!40,
+	maincolor!20, maincolor!60, maincolor!35},
+	% sets the opacity at which the bubbles are shown
+	bubble fill opacity = 0.8,
+}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+% your name
+\cvname{Hamidreza\\[0.2em] Souzangarzadeh}
+% job title/career
+\cvjobtitle{
+%Mechanical engineer,\\[0.2em] Mechanical scholar
+}
+
+%% optional information
+% profile picture
+%\cvprofilepic{pics/hamid4.jpg}
+
+% NOTE: ordering in sidebar will mimic the following order
+% date of birth
+% off----------------------------------------------------------------------
+%\cvbirthday{\today}
+% off----------------------------------------------------------------------
+% short address/location, use \newline if more than 1 line is required
+% off----------------------------------------------------------------------
+%\cvaddress{Park Ave.~1, 555 555 B-Woods}
+% off----------------------------------------------------------------------
+% phone number
+\cvphone{+98 910 91 88 791}
+% personal website
+% off----------------------------------------------------------------------
+%\cvsite{https://pandascience.net}
+% off----------------------------------------------------------------------
+% email address
+\cvmail{hamid.reza.sou@gmail.com}
+
+%\cvMedium{https://medium.com/@hamid.reza.sou}{}
+
+\cvscholar{https://scholar.google.com/citations?user=HOgV0HMAAAAJ}{Google-Scholar}
+
+\cvlinkedin{https://www.linkedin.com/in/hamid-souzangar-95b197195/}{Linkedin}
+
+%\cvgit{https://github.com/hamidsouzangar}{Github}
+
+\cvResearchGate{https://www.researchgate.net/profile/Hamidreza-Souzangarzadeh}{ResearchGate}
+
+%\cvgit
+%\cvscholar
+%\cvlinkedin
+%\cvResearchGate
+%\cvMedium
+% pgp key
+% off----------------------------------------------------------------------
+%\cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
+% off----------------------------------------------------------------------
+% any other custom entry
+%\cvcustomdata{\faFlag}{Iranian}
+
+%-------------------------------------------------------------------------------
+%%                           SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	% include  gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+	\graphicspath{{pics/flags/}}
+% pictures, icons and drawings
+%\faLinkedinSquare  Linkedin in square
+%\faLinkedin        LinkedIn
+%\faGithub         GitHub
+%\faPhoneSquare     Phone
+%\faMediumM         Medium
+%\faMortarBoard     graduation
+%\aiResearchGateSquare  ResearchGate Square 
+%\aiResearchGate        ResearchGate
+%\aiGoogleScholar       Google Scholar
+%\aiGoogleScholarSquare Google scholar-square
+
+	% social network accounts incl. proper hyperlinks
+ %-----------------------------------------------------------------------------
+%                                     Social
+% -----------------------------------------------------------------------------
+% \profilesection{Online Platforms}
+%		\begin{icontable}{2.5em}{1em}
+%			\social{\aiGoogleScholarSquare}{https://scholar.google.com/citations?user=HOgV0HMAAAAJ} {Google Scholar Page Link}
+            %\social{\aiResearchGateSquare}{https://www.researchgate.net/profile/Hamidreza-Souzangarzadeh} {ResearchGate Page Link}
+%            \social{\faLinkedin}{https://www.linkedin.com/in/hamid-souzangar-95b197195/}{Linkedin Page Link}
+            %\social{\faMedium}{https://medium.com/@hamid.reza.sou}{Medium Weblog Link}
+			%\social{\faGithub}{https://github.com/hamidsouzangar}{Github Project Page Link}
+%		\end{icontable}
+ %-----------------------------------------------------------------------------
+%                                    Languages
+% -----------------------------------------------------------------------------
+	\profilesection{Qualifications}
+ $\bullet$  \textbf{IELTS} Overall: \textbf{6.5} 
+    \\(Speaking: 6.0; Reading: 6.5; Writing: 6.0; Listening: 7.0)
+    
+	$\bullet$  \textbf{GRE} Over all: \textbf{305} 
+ Verbal: 143, Quantitative: 162;
+
+%---------------------------------------------------------------------------------
+%                                    Hard Skills
+% --------------------------------------------------------------------------------
+	\profilesection{Hard Skills}
+        \skill{\faChevronRight}{Programming}
+                 \subskill[1.0em]{\faCaretRight}{Python, Matlab}
+         \skill{\faChevronRight}{Machine Learning}
+         		\subskill[1.0em]{\faCaretRight}{Regression, Neural Networks}
+        \skill{\faChevronRight}{Computer-Aided Design (CAD)}
+                \subskill[1.0em]{\faCaretRight}{Catia, SolidWorks, Freecad}
+        \skill{\faChevronRight}{Finite Element Analysis (FEA)}
+                \subskill[1.0em]{\faCaretRight}{ABAQUS}
+        \skill{\faChevronRight}{Operation Research}
+                \subskill[1.0em]{\faCaretRight}{Decision-making, \\Monte Carlo}
+        \skill{\faChevronRight}{Statistical Analysis}
+        \skill{\faChevronRight}{Writing} 
+                \subskill[1.2em]{\faCaretRight}{Main author of 3 publications, Using \LaTeX}{}
+	%	\skill{\faBalanceScale}{Sleeping almost all day}
+	%	\skill{\faSitemap}{Eating a lot of bamboo sprouts}
+	%	\skill{\faGraduationCap}{Relaxing rest of the day}
+%---------------------------------------------------------------------------------
+%                                    Soft Skills
+% --------------------------------------------------------------------------------
+	\profilesection{Soft Skills}
+            \skill{\faChevronRight}{Teamwork}
+                    \subskill[1.0em]{\faCaretRight }{Worked in 3 research group}
+                        \skill{\faChevronRight  }{Communication}
+                     \subskill[1.0em]{\faCaretRight }{\footnotesize{Passed a Transactional Analysis Course}}
+                     \skill{\faChevronRight  }{Critical thinking}
+                    \skill{\faChevronRight}{Time management}
+                     \subskill[1.0em]{\faCaretRight }{Using GTD method}
+           %              \skilfaCaretRight }{}
+            
+%		\pointskill{\faHome}{Looking Cute}{4}[4]
+%			\skill[1.8em]{\faCompress}{No need to specify further}
+%		\pointskill{\faChild}{Chillin' hard}{3}[4]
+%			\skill[1.8em]{\faCompress}{On a tree}
+%			\skill[1.8em]{\faCompress}{In the grass}
+}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+	%\profilesection{About Me}
+	%\aboutme{		The giant panda is a terrestrial animal and primarily spends its life	}
+
+%	\profilesection{Diagrams}
+%-------------------------------------------------------------------------------------
+%                         Publications at \\a Glance
+%-------------------------------------------------------------------------------------
+     \profilesection{Publications at \\ a Glance}
+ %  \name{}
+%         \nametext
+\begin{itemize}
+  %   \setlength{\itemindent}{-.2.5in}
+    \item\textbf{3~ first-author publications:}
+        \begin{itemize}
+            \setlength{\itemindent}{-.1in} %@hamid left margin of items
+            \item Structural and Multidisciplinary Optimization (2020), 
+            \item Applied Mathematical Modeling (2017),
+            \item Under review
+        \end{itemize}
+    \item\textbf{3~ co-authored publications:} 
+        \begin{itemize}
+            \setlength{\itemindent}{-.1in} %@hamid left margin of items
+            \item Journal of Energy Storage (2020)
+            \item Experimental Techniques (2018)
+            \item Journal of the Brazilian Society of Mechanical Sciences and Engineering (2024)
+        \end{itemize}
+   % \item \textbf{1~ papers under review}
+    \item \textbf{Total citations:} 70
+    \item \textbf{H-index:} 4
+\end{itemize}
+ 
+%-------------------------------------------------------------------------------------
+%                                   Reviewing Papers
+%-------------------------------------------------------------------------------------
+    \profilesection{Reviewing Papers}
+    
+%   \name{}\\
+  % Elsevier Reviewer, Thin-walled structure May 2021         
+ %   \nametext
+\small
+
+\textbf{Elsevier Reviewer,} Thin-walled structure,  \textit{2021}
+\\
+\textbf{Elsevier Reviewer,} Ain Shams Engineering Journal, \textit{2022}
+\\
+\textbf{Springer Nature Reviewer,} Journal of the Brazilian Society of Mechanical Sciences and Engineering, \textit{2024}
+%-------------------------------------------------------------------------------------
+%                                      Hobbies
+%-------------------------------------------------------------------------------------
+\profilesection{Hobbies}
+
+     \begin{itemize}
+         \item Mountain Climbing
+       \item Movie/Theater Going
+        \item  Playing Board Games 
+ %       \item  Designing and making fan-made Board Games with laser-cut \& 3d-printer
+  %      \item  DIY(Building 3D printers)
+     \end{itemize}
+
+
+%-------------------------------------------------------------------------------------
+%                                    References
+%-------------------------------------------------------------------------------------    
+      \profilesection{References}
+
+ \myreference
+             {[1]}
+             {Prof.}
+             {M.J Rezvani}
+             {Department of Mechanical Engineering, IAU, Iran}
+             {m.rezvani@semnaniau.ac.ir}
+             {rezvani57@gmail.com}
+             \\
+\myreference
+             {[2]}
+             {Prof.}
+             {Ali Jahan}
+             {Department of Industrial  Engineering, IAU, Iran}
+             {A.jahan@semnaniau.ac.ir}
+             {Iranalijahan@yahoo.com}
+             \\
+
+\myreference
+             {[3]}
+             {Prof.}
+             {Abbas S. Milani}
+             {School of Engineering, UBC, Kelowna,  Canada}
+             {Abbas.milani@ubc.ca}
+             {}
+
+           
+
+
+}
+ 
+%	\begin{sidebarminipage}
+	%	\chartlabel{Bubble}
+	%	\chartlabel{Diagrams}
+%	\end{sidebarminipage}
+
+%	\begin{figure}\centering
+%		\smartdiagram[bubble diagram]{
+	%		\textcolor{white}{\textbf{Being a}} \\
+	%		\textcolor{white}{\textbf{Panda}}, % center bubble
+	%   \textcolor{black!90}{Eating},
+%			\textcolor{black!90}{Sleeping},
+	%		\textcolor{black!90}{Rolling},
+	%		\textcolor{black!90}{Playing},
+	%		\textcolor{black!90}{Chilling}
+%		}
+%	\end{figure}
+
+%	\chartlabel{Wheel Chart}
+
+%	\wheelchart{3.7em}{2em}{%
+%	20/3em/maincolor!50/Chill,
+%	15/3em/maincolor!15/Play,
+%	30/4em/maincolor!40/Sleep,
+%	20/3em/maincolor!20/Eat
+%	}
+
+%	\profilesection{Barskills}
+%	\barskill{\faSkyatlas}{Wearing asian rice hats}{60}
+%	\barskill{\faImage}{Playing Chess}{30}
+%	\barskill{\faMusic}{Playing the bamboo flute}{50}
+
+%	\profilesection{Memberships}
+%	\begin{memberships}
+%		\membership[4em]{pics/logo.png}{PandaScience.net}
+%		\membership[4em]{pics/logo.png}{Some longer text spanning over more than
+%			only one line}
+%	\end{memberships}
+%}
+
+
+%-------------------------------------------------------------------------------
+%%                        TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+
+%\faGithub         GitHub
+%\faPhoneSquare     Phone
+%\\faMediumM         Medium
+%\faMortarBoard     graduation
+%\aiResearchGateSquare  ResearchGate Square 
+%\aiResearchGate 
+%--------------------------------------------------------------------------
+%% --------------------------------Education--------------------------------
+%\begin{cvtable}
+%	%%%%%%%%%%%%%%%%\cvitem
+                            % #1 {icon}
+                            % #2 {<cv-item title>}
+                            % #3 {year}
+                            % #4 {<location>}
+                            % #5 {<optional: description>}
+%\end{cvtable}
+%--------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------
+\cvsection{Education}
+\subsection{Study}
+\begin{cvtable}[1.5]
+	\Educvitem
+            {\faGraduationCap}
+            {M.Sc. Mechanical Engineering}
+            {2014--2017}
+            {Azad University, Semnan, Iran}
+    		{ }
+            \Shortcustomcvitem
+            {~~}
+            {\hspace{-0.3em}Applied Design}
+            {}
+            \Shortcustomcvitem
+            {~~}
+            {GPA:}
+            {18.4/20 (3.91/4)}
+            \Shortcustomcvitem
+            {~~}
+            {Thesis Topic:}{{\small Selection of optimum design for conical segmented aluminum tubes as energy absorbers: Application of MULTIMOORA method.}}
+            \Shortcustomcvitem
+            {~~}
+            {Thesis Grade:}{20/20}
+            \Shortcustomcvitem
+            {~~}
+            {Supervisor:}
+            {Dr. Mohammad Javad Rezvani$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{1}}} $}
+             \Shortcustomcvitem
+            {~~}
+            {Advisor:}
+            {Dr. Ali Jahan$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{2}}} $}
+            
+        \Educvitem
+            {\faGraduationCap}
+            {B.Sc. Mechanical engineering}
+            {2008--2013}
+            {Azad University, Parand,  Iran}
+            {}
+\end{cvtable}
+
+%% ---------         -----------------------------------------------------------------
+%% -------------------------          -Selected Courses--------------------------------
+%% ----------          ---------------------------------------------------------------
+
+\subsection{Selected Courses}
+
+
+\begin{multicols}{2}
+%	[ \textbf{Core courses:}]
+	\begin{itemize}
+
+%	  	\item Automobile Chassis and \\Body Design 4/4
+%	  	\item Industry Economy and \\Management 4/4
+	%  	\item Modal Analysis 4/4
+	    \item Continuum mechanics 4/4
+		\item Engineering Design Methods 4/4
+		\item Finite Element 4/4
+%		\item Data-driven Decision Making (Online Course)
+		\item 	Advanced Robotic  4/4
+		\item Mechanical Behavior of \\Materials 4/4
+%		\item	Advanced Engineering Mathematics
+			
+
+		
+	%		\item Mechanics of composite
+	%	\item Transactional Analysis Training (TA)
+	%	\item Machine Learning with Python (Online course)
+			%	\item 	Advanced Robotic
+			%	\item	Advanced Engineering Mathematics
+		%	\item	Mechanical Behavior of Materials
+			%						\columnbreak	
+			%	\item Mechanic of composite
+       \end{itemize}
+		\textbf{Other Courses:}
+	{\footnotesize 	\begin{itemize}
+		\item Programming~(MATLAB and python)
+		%	\item Design of Experiments (Online Course)	
+		%	\item Classical and Evolutionary Optimization with MATLAB (Online Course)
+	   	\item Machine Learning with Python (Coursera)
+		\item Basic of AI \& Image processing  
+		\item Transactional Analysis Training (TA)
+			
+		\end{itemize}
+			}	
+\end{multicols}
+%% --------------------------------------------------------------------------
+%% --------------------------Publications--------------------------------
+%% -------------------------------------------------------------------------
+\cvsection{Publications}
+\subsection{Google Scholar: {\small\href{https://scholar.google.com/citations?user=HOgV0HMAAAAJ}{\textcolor[rgb]{0.00,0.00,0.55}{{\selectfont
+				scholar.google.com/citations?user=HOgV0HMAAAAJ}}}}}
+%% ------------------------------------------------------------------------
+\subsection{First Author}
+\begin{itemize}
+\item[2017] \textbf{H. Souzangarzadeh}, M. J. Rezvani$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{1}}} $, A. Jahan$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{2}}} $, \textit{Selection of optimum design for conical segmented aluminum tubes as energy absorbers: Application of MULTIMOORA method,} Applied Mathematical Modelling. 51 (2017) 546–560. \\	
+\chartlabel{\href{https://doi.org/10.1016/j.apm.2017.07.005}{{\selectfont
+ 		\textcolor[rgb]{0.00,0.00,0.55}{\textbf{doi} }}}}
+ \chartlabel{Decision-Making}
+ \chartlabel{FEA}
+ \chartlabel{Statistical Analysis} 
+ \hfill {\chartlabel{IF: 2.841 Q1}}
+ 		 
+   
+ 	
+  
+\item[2020] \textbf{H. Souzangarzadeh}, Ali Jahan$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{2}}} $, M. J. Rezvani$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{1}}} $,  Abbas S. Milani$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{3}}} $, \textit{Multi-objective optimization of cylindrical segmented tubes as energy absorbers under oblique crushes: D-optimal design and integration of MULTIMOORA with combinative weighting,} Structural and Multidisciplinary Optimization. (2020). \\\chartlabel	{\href{https://doi.org/10.1007/s00158-020-02486-7}{{\selectfont			\textcolor[rgb]{0.00,0.00,0.55}{\textbf{doi}}}}} \chartlabel{Multi-scenario Optimization}\chartlabel{ML-Regression}
+\chartlabel{DOE} \hfill {\chartlabel {IF: 4.105 Q1}}
+	 	
+	\item[2024] \textbf{H. Souzangarzadeh}, Ali Jahan$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{2}}}$, Mojtaba Shams Solari,  M. J. Rezvani$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{1}}} $\textit{Selection of crash-box manufacturing process: Integration of ELECTRE-IDAT with Monte Carlo simulation (Under review).} 	\\\chartlabel{Materials and design selection} \chartlabel{Uncertain data}\chartlabel{Monte Carlo}
+\end{itemize}
+%% --------------------------------------
+\subsection{Co-Author}
+\begin{itemize}
+  \item[2018] M. Razazan, M. J. Rezvani$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{1}}} $, \textbf{H. Souzangarzadeh}, \textit{Evaluation of the Performance of Initiator on Energy Absorption of Foam-Filled Rectangular Tubes: Experimental and Numerical Assessment,} Experimental Techniques. 42 (2018). {\href{https://doi.org/10.1007/s40799-017-0206-1}	{{\selectfont			\textcolor[rgb]{0.00,0.00,0.55}{\textbf{doi}}}}} 
+%\chartlabel{FEA}
+%\chartlabel{Experimental Tests}
+%\hfill \textbf{ \footnotesize{IF: 0.806 Q3}}
+
+\item[2020] M. J. Rezvani$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{1}}} $, \textbf{H. Souzangarzadeh}, \textit{Effects of triggering and polyurethane foam on energy absorption of thin-walled circular tubes under the inversion process,} Journal of Energy Storage. 27 (2020) 101071. 	\href{https://doi.org/10.1016/j.est.2019.101071}{{\selectfont		\textcolor[rgb]{0.00,0.00,0.55}{\textbf{doi}}}} %\hfill  \footnotesize {IF: 3.517 Q1}
+		
+  \item[2024] M. J. Rezvani$ ^{\textcolor[rgb]{0.00,0.50,1.00}{\textbf{1}}} $, \textbf{H. Souzangarzadeh},  \textit{Performance of end-capped conical segmented tubes filled with foam under axial and oblique loads as an energy absorber. } {\footnotesize Journal of the Brazilian Society of Mechanical Sciences and Engineering.}
+  	\href{https://doi.org/10.1007/s40430-023-04581-4}
+  {{\selectfont
+  		\textcolor[rgb]{0.00,0.00,0.55}{\textbf{doi}}}}
+
+
+\end{itemize}
+
+%--------------------------------------------------------------------------
+%% --------------------------Research Interest--------------------------------
+%-------------------------------------------------------------------------
+
+\cvsection{Research Interest}
+\begin{multicols}{2}
+\begin{itemize}
+% \item Industry 4.0
+% \item Product development
+% \item manufacturing
+%\item Crashworthiness 
+%\item Gear design
+\item Robotics
+%\item Operations Research
+% \item Decision-making
+%\item Optimization
+ \item Solid Mechanics
+%\item Experimental Mechanics
+\item Numerical Modeling
+%\item Finite Element Modeling
+%\item Operations Research
+%\item Biomaterials
+ \item Machine learning
+ \item Design engineering 
+%\item Topology optimization
+%  \item Optimization
+%  \item CAD/CAM
+%\item Deformation Mechanisms
+ \item Additive manufacturing
+\end{itemize}
+\end{multicols}
+
+%\subsection{Study}
+%\begin{cvtable}[1.5]
+%	\cvitem{}{Master Studies Panda Science}{Panda Academy}
+%		{Focus: Advanced rice hat studies and nouveau rain-reflecting cover
+%		materials.}
+%	\cvitem{}{Master Theses ($\varnothing\, 1,0$)}{Asian Rice Hat Institute}
+%		{Impact of solar radiation onto rice hat cover materials with special
+%		attention to water resistance.}
+%	\cvitem{}{Bachelor Studies PandaScience}{Panda Academy}
+%		{Focus: Bamboo morphology and its usage in different craftmanships.}
+%	\cvitem{}{Bachelor Theses ($\varnothing\, 1,0$)}{Bamboo Institute}
+%		{The bambo flute: An underestimated instrument in orchestras?}
+%\end{cvtable}
+
+%\cvsection{Publications}
+%\begin{cvtable}
+%	\cvpubitem{Cooking: 100 recipes for lazy Pandas}{Me and My Panda Friends}
+%		{Panda's Culinary World}{2010}
+%	\cvpubitem{Pandastasia}{Still Me}{Bamboo Books Assoc.}{2005}
+%\end{cvtable}
+
+
+
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%----------------------------newpage---------------------------------------
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+
+
+\newpage
+\makebacksidebar
+% \newgeometry{
+% 	top=\topbottommargin,
+% 	bottom=\topbottommargin,
+% 	right=\leftrightmargin,
+% 	left=\leftrightmargin
+% }
+
+%----------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------
+
+\cvsection{Academic Experience}
+\subsection{Laboratory}
+\begin{cvtable}[1.5]
+    \customcvitem
+            {\faUniversity}
+            {Crash-Box Design and Evaluation} 
+            {2016--2019}
+            {Dr.  Rezvani's Lab}
+            {$\bullet$ Developed, evaluated, and designed innovative crash-box concepts.\\
+     $\bullet$ Conducted various deformation analyses on crash-box prototypes. \\
+     $\bullet$ Simulated crash-box deformation behavior using advanced software tools.}
+\end{cvtable}
+
+\subsection{Theoretical}
+    \begin{cvtable}[1.5]
+	\customcvitem
+                {\faUniversity}
+                {Green Manufacturing Process Selection}
+                {2016--2019}
+                {Dr.  Jahan's Lab}
+                {$\bullet$ Successfully selected manufacturing processes under uncertain conditions. \\
+	% $\bullet$ performed a decision-making method that is compatible with interval data\\
+	% $\bullet$ Analys different decision-making methods to choose a proper one which is compatible with uncertain conditions (interval and multi-periodic data)\\
+	$\bullet$ Utilized Monte Carlo simulations\\
+	%$\bullet$ Performed simulation for the product's performance\\	
+	$\bullet$  Gathered data on cost, time, and environmental impact during production.\\
+}
+
+	\customcvitem
+                {\faUniversity}
+                {Prototype Selection}
+                {2016--2019}
+                {Dr.  Jahan's Lab}
+                {
+                $\bullet$ Explored multiple optimization scenarios to enhance crash-box designs.\\
+	       	$\bullet$ Developed decision-making techniques with different      weighting methods\\% to find an optimum cashbox's design and a promising optimizing scenario\\
+	       	%$\bullet$ Performed simulation of crash boxes deformation process  \\
+		      $\bullet$ Applied D-optimal Design of Experiments techniques \\
+		      $\bullet$ Conducted Analysis of Variance (ANOVA) to analyze data and regression models. \\
+		      %$\bullet$ Performed Optimization,\\
+	   %	$\bullet$ Analyzed statistically the data (classifying and identifying interrelationships)\\
+		$\bullet$ Collaborated with Dr. Milani from UBC \\
+	}
+\end{cvtable}
+
+%----------------------------------------------------------------------------------
+%----------------	 {Work Experience}---------------------------------------------
+%----------------------------------------------------------------------------------
+%\faChalkboardTeacher
+\cvsection{Work Experience}
+\subsection{Tesching}
+\begin{cvtable}[1.5]
+	\customcvitem
+                    {\faBriefcase}
+                    {Teaching Assistant}
+                    {Since 2017}
+                    {IAU University}
+                    {
+                    $\bullet$ Teaching: ABAQUS for the Finite Element Course\\
+                    $\bullet$ Teaching Assistant: Mechanics of Materials
+                        }
+        \customcvitem
+            	{\faBriefcase}
+                    {FEM with ABAQUS}
+                    {Since 2015}
+                    {Private Tutor}
+                    {
+                    $\bullet$ Basic FEM ~~~ $\bullet$ Static, Dynamic and Heat Transfer Analysis ~~~ \\$\bullet$ CAD and Meshing in ABAQUS 
+                    }
+   
+	\customcvitem
+        	   	{\faBriefcase}
+                    {Full Parameteric Designing with CATIA V5}
+                    {2013-2018}
+                    {Private Tutor}
+                    {
+                       %\textup{$\bullet$ Drawing Sketch  ~~ $\bullet$ 3D Solid Modeling \\ ~~ $\bullet$ Wireframe and Surface Designing\\}
+                      }
+	\customcvitem
+        		{\faBriefcase}
+                    {DoE and Statistical Analysis with Design-Expert}
+                    {May 2019}
+                    {Lecturer}
+                    {$\bullet$ Three hours lecture }
+    
+\end{cvtable}
+
+
+\subsection{Mechanical Engineer}
+\begin{cvtable}[1.5]
+	\customcvitem
+                    {\faBriefcase}
+                    {CAD Designer \& Mechanical Engineer}
+                    {since 2016}
+                    {Freelancer}
+                    {
+                    $\bullet$ Surface Modeling of an Automobile interior design  ~~ \\ $\bullet$ Designing and making Wooden Crafts with CATIA and Corel ~~\\
+                    $\bullet$ Mechanical modeling and analysis ~~\\
+                    $\bullet$ Providing handouts about metals and their market 
+                    }
+
+    %    \customcvitem
+     %               {\faBriefcase}
+      %              {Teaching Assistant}
+       %             {Since-2017}
+        %            {IAU University}{}
+        \customcvitem
+                    {\faBriefcase}
+                    {Researcher at Dr. Ali Jahan's Lab}
+                    {Since-218}
+                    {IAU University}
+                    {}
+%       \customcvitem
+ %                {\faBriefcase}
+  %               {Researcher \&  Corporate trainer} {July 2021-September 2022}
+  %                 {Hoonam co.}
+    %              {
+    %             $\bullet$ Teaching  metals standards ~~ \\ $\bullet$ Providing handouts %about metals and their market 
+     %           }
+
+  %	\customcvitem
+  %                 {\faBriefcase}
+   %                {Educational Manager}
+   %                {2021--2022}
+   %                {Hoonam Co.}
+   %               {  
+    %               $\bullet$ Instructing new employees on the metal's market\\  
+    %               $\bullet$ Organizing an education system for the company  
+     %              }
+
+\end{cvtable}
+
+
+%------------------------------------------------------------------------
+%                          Extra-Curricular Activities
+%------------------------------------------------------------------------
+
+\cvsection{Extra-Curricular Activities}
+\begin{cvtable}
+	\cvitemshort{DIY}{Built a \textbf{3D printer}
+	 {\small\href{https://medium.com/@hamid.reza.sou/making-my-own-3d-printer-a-rewarding-journey-f1b137592ad1}{\textcolor[rgb]{0.00,0.00,0.55}{{\selectfont
+						\textbf{[link]}}}}}
+	 }
+	\cvitemshort{Designing}{Designing and making fan-made Board Games with a laser-cut machine \& 3d-printer}
+	%\cvitemshort{Education}{Teaching young pandas to be more panda-like}
+\end{cvtable}
+
+%\cvsignature
+
+\end{document}

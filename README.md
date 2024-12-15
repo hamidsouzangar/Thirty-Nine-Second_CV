@@ -11,6 +11,7 @@ https://www.overleaf.com/latex/templates/thirtyninesecondscv/cxkwbrbxbfhn
 
 2.  Place the file in your LaTeX project directory.
 3.  In your main LaTeX document (`.tex` file), use the `\documentclass{thirtyninesecondcv}` command to utilize this class.
+4.  Complite the file with `XeLatex` command.
 
 **Usage Example:**
 
